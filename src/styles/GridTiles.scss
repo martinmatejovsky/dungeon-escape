@@ -1,0 +1,25 @@
+.grid-tile {
+  width: 60vw;
+  height: 60vw;
+  max-height: 60vh;
+  max-width: 60vh;
+  aspect-ratio: 1 / 1;
+
+  .tile-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tile {
+    flex-grow: 1;
+    aspect-ratio: 1 / 1;
+    background-color: #81c9fd;
+    border: solid 1px #000;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &.is-active {
+      background-color: #466e8c;
+    }
+  }
+}
