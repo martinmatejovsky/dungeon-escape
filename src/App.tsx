@@ -1,5 +1,5 @@
 import './App.css';
-import GridTile from "../components/GridTile";
+import GridTile from "./components/GridTile";
 
 function App() {
   return (
