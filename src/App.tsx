@@ -1,15 +1,33 @@
-import "./App.css";
+import "./styles/elements.css";
+import "./styles/App.scss";
 import GridTile from "./components/GridTile";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [gameWon, setGameWon] = useState(false);
 
+  useEffect(() => {
+    const overlay = document.getElementById("darkness-overlay");
+
+    if (overlay) {
+      document.addEventListener("mousemove", (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        overlay.style.setProperty("--x", `${x}px`);
+        overlay.style.setProperty("--y", `${y}px`);
+      });
+    }
+  }, []);
+
   return (
     <div className="App">
-      {gameWon && <h2>WON!</h2>}
+      <div id="darkness-overlay"></div>
 
-      <GridTile setGameState={setGameWon} />
+      <div className={gameWon ? "exit-door is-opened" : "exit-door"}>
+        <p>Neco o me</p>
+
+        <GridTile setGameState={setGameWon} />
+      </div>
     </div>
   );
 }

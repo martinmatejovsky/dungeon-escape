@@ -5,18 +5,22 @@ import { GameGrid } from "../utils/types";
 type Props = {
   setGameState: Dispatch<SetStateAction<boolean>>;
 };
-const gridSize = 5;
+const gridSize = 4;
 
 export default function GridTile({ setGameState }: Props) {
-  // HANDLERS
+  // HELPERS
+  const createEmptyGrid = (): GameGrid =>
+    Array.from({ length: gridSize }, () => Array(gridSize).fill(true));
+
   const handleTileClick = (
     grid: GameGrid,
     rowIndex: number,
     columnIndex: number,
   ) => {
+    const newGrid = structuredClone(grid);
     const toggle = (row: number, col: number) => {
       if (row >= 0 && row < gridSize && col >= 0 && col < gridSize) {
-        grid[row][col] = !grid[row][col];
+        newGrid[row][col] = !newGrid[row][col];
       }
     };
     toggle(rowIndex, columnIndex);
@@ -25,7 +29,7 @@ export default function GridTile({ setGameState }: Props) {
     toggle(rowIndex, columnIndex - 1);
     toggle(rowIndex, columnIndex + 1);
 
-    return grid;
+    return newGrid;
   };
 
   // METHODS
@@ -41,11 +45,8 @@ export default function GridTile({ setGameState }: Props) {
   };
 
   // This serves as a solution to the fact that not all random color setups are solvable
-  const shuffleGrid = () => {
-    const emptyGrid: GameGrid = Array.from({ length: gridSize }, () =>
-      Array(gridSize).fill(true),
-    );
-    let newGrid = structuredClone(emptyGrid);
+  const createShuffledGrid = (): GameGrid => {
+    let newGrid = createEmptyGrid();
 
     do {
       for (let i = 0; i < gridSize; i++) {
@@ -60,13 +61,14 @@ export default function GridTile({ setGameState }: Props) {
   };
 
   // STATE
-  const [gameGrid, setGameGrid] = useState<GameGrid>(shuffleGrid());
+  const [gameGrid, setGameGrid] = useState<GameGrid>(createShuffledGrid);
 
   // EFFECTS
   useEffect(() => {
     setGameState(evaluateWinningCondition(gameGrid));
   }, [setGameState, gameGrid]);
 
+  // METHODS
   return (
     <div className="grid-tile">
       {gameGrid.map((row, rowIndex) => {
