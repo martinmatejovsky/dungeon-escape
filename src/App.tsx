@@ -2,6 +2,7 @@ import "./styles/elements.css";
 import "./styles/App.scss";
 import GridTile from "./components/GridTile";
 import { useEffect, useState } from "react";
+import MotivationLetter from "./components/MotivationLetter";
 
 function App() {
   const [gameWon, setGameWon] = useState(false);
@@ -24,7 +25,7 @@ function App() {
       <div id="darkness-overlay"></div>
 
       <div className={gameWon ? "exit-door is-opened" : "exit-door"}>
-        <p>Neco o me</p>
+        <MotivationLetter />
 
         <GridTile setGameState={setGameWon} />
       </div>
