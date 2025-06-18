@@ -6,6 +6,5 @@ body,
 }
 
 body {
-  box-sizing: border-box;
   cursor: url("../../public/img/torch-pointer.png") 32 32, auto;
 }
