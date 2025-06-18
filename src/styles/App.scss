@@ -1,0 +1,52 @@
+ @import "./constants";
+
+.App {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../public/img/cave-squared.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2100px;
+  background-color: $brown-dark;
+
+  font-size: 18px;
+  font-family: Cambria, serif;
+
+  .exit-door {
+    position: relative;
+    width: 560px;
+    height: 560px;
+    overflow: hidden;
+
+    .grid-tile {
+      position: absolute;
+      top: 0;
+      transition: top 1.5s ease-in;
+    }
+
+    &.is-opened {
+      .grid-tile {
+        top: 100%;
+      }
+    }
+  }
+}
+
+#darkness-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(0, 0, 0, 0) 100px,
+    rgba(0, 0, 0, 0.4) 400px
+  );
+  transition: background 2s ease;
+}
