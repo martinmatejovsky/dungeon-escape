@@ -1,6 +1,7 @@
 @import "constants";
 
 .motivation-letter {
+  box-sizing: border-box;
   height: 100%;
   margin-right: -18px; // hide scrollbar
   padding: 20px 20px 60px;
