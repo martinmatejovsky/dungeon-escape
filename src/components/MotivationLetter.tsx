@@ -15,24 +15,23 @@ export default function MotivationLetter() {
         zvědavost nedala.
       </p>
       <p>
-        Vidím na Vašich stránkách volnou pozici backend developera, a to bohužel
-        není moje parketa (i když JavaScript a TypeScript používám a nemám
-        problém se rozvíjet na backend vývojáře). Rád bych se Vám i tak uvedl ve
-        známost, mým malým koníčkem je totiž tvorba her, a třeba právě tento
-        aspekt - nápady, kreativitu a hlavně zápal - bych mohl do Vaší party
-        přinést a cítit naplnění, že konečně je moje hobby mou prací. Projekty
-        jako Ylands by nejvíce ladily s mou krevní skupinou. Hádám, že lidí,
-        kteří by chtěli vytvářet nápady pro hry, se vám hlásí hromada, takže
-        snad by moje technické znalosti z vývoje webů byly pro Bohemia
+        Vidím nyní na Vašich stránkách volnou pozici backend developera, a to
+        prozatím není moje parketa (i když JavaScript a TypeScript používám a
+        jsem otevřený se rozvíjet na backend vývojáře). Rád bych se Vám i tak
+        uvedl ve známost, mým velkým koníčkem je totiž tvorba her, a třeba právě
+        tento aspekt - nápady, kreativitu a hlavně zápal - bych mohl do Vaší
+        party přinést a cítit naplnění, že konečně je moje hobby mou prací.
+        Projekty jako Ylands by nejvíce ladily s mou krevní skupinou. Hádám, že
+        lidí, kteří by chtěli vytvářet nápady pro hry, se vám hlásí hromada,
+        takže snad by moje technické znalosti z vývoje webů byly pro Bohemia
         Interactive přínosnější, a třeba se budu moct přidávat do kvasu myšlenek
-        a chodbových smalltalků a tam svou nápaditost ventilovat (upřímnou
-        soustrast). Baví mě vymýšlet zápletky, mikro scénky, mini úkoly, úkolové
-        principy.
+        a chodbových smalltalků a tam svou nápaditost ventilovat. Baví mě
+        vymýšlet zápletky, mikro scénky, mini úkoly, úkolové principy.
       </p>
       <p>
         Budu nadšený, pokud se rozhodnete mě kontaktovat a zjistíme, v čem bych
-        Vám se svým potenciálem mohl nejvíce pomoci. Online, osobně... ideálně
-        mimo ten les, kde je Someday You’ll Return, prosím.
+        Vám se svým potenciálem mohl nejvíce obohatit a přispět. Online,
+        osobně... ideálně mimo ten les, kde je Someday You’ll Return, prosím.
       </p>
 
       <p>S úctou, Martin Matějovský</p>
