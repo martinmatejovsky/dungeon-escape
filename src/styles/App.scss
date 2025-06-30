@@ -17,8 +17,9 @@
 
   .exit-door {
     position: relative;
-    width: 560px;
-    height: 560px;
+    max-width: 560px;
+    max-height: 100vh;
+    aspect-ratio: 1/1;
     overflow: hidden;
 
     .grid-tile {
