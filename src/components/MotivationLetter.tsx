@@ -8,33 +8,18 @@ export default function MotivationLetter() {
       <h2>Frontendový vývojář</h2>
 
       <p>
-        Dobrý den do Bohemia Interactive. Poslední léta jsem se živil jako
-        vývojář webových stránek (čistě frontend), a nyní hledám nové pracovní
-        vytížení. Mám velkou zálibu ve hrách a když mi moje partnerka řekla, že
-        kousek od jejího bydliště sídlí "nějaké herní studio nebo co", tak mi
-        zvědavost nedala.
+        Poslední léta jsem se živil jako vývojář webových stránek (čistě
+        frontend), a nyní hledám nové pracovní vytížení. Moje hlavní dovednost
+        spočívá ve Vue.js a s vývojem frontendu obecně. Nyní se učím React, ve
+        kterém je i napsána tato mini hra.
       </p>
       <p>
-        Vidím nyní na Vašich stránkách volnou pozici backend developera, a to
-        prozatím není moje parketa (i když JavaScript a TypeScript používám a
-        jsem otevřený se rozvíjet na backend vývojáře). Rád bych se Vám i tak
-        uvedl ve známost, mým velkým koníčkem je totiž tvorba her, a třeba právě
-        tento aspekt - nápady, kreativitu a hlavně zápal - bych mohl do Vaší
-        party přinést a cítit naplnění, že konečně je moje hobby mou prací.
-        Projekty jako Ylands by nejvíce ladily s mou krevní skupinou. Hádám, že
-        lidí, kteří by chtěli vytvářet nápady pro hry, se vám hlásí hromada,
-        takže snad by moje technické znalosti z vývoje webů byly pro Bohemia
-        Interactive přínosnější, a třeba se budu moct přidávat do kvasu myšlenek
-        a chodbových smalltalků a tam svou nápaditost ventilovat. Baví mě
-        vymýšlet zápletky, mikro scénky, mini úkoly, úkolové principy.
+        Chtěl bych se rozvíjet hlavně ve frontendu, a postupně se dostávat i do
+        backnedu a tím pádem na full-stack vývojáře (Node JS by byl pro mě
+        nejpřirozenější, už v něm mám drobný osobní projekt). Tyto znalosti
+        promítám i do mého koníčku, kterým je tvorba příběhových her pro
+        kamarády.
       </p>
-      <p>
-        Budu nadšený, pokud se rozhodnete mě kontaktovat a zjistíme, v čem bych
-        Vám se svým potenciálem mohl nejvíce obohatit a přispět. Online,
-        osobně... ideálně mimo ten les, kde je Someday You’ll Return, prosím.
-      </p>
-
-      <p>S úctou, Martin Matějovský</p>
 
       <figure className="motivation-image">
         <img src="/img/DL-III-ante-infocentrum.png" alt="Dobývání Lokte III" />
