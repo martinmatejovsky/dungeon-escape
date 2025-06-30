@@ -20,6 +20,7 @@ export default function MotivationLetter() {
         už v něm mám drobný osobní projekt). Tyto znalosti promítám i do mého
         koníčku, kterým je tvorba příběhových her pro kamarády.
       </p>
+      <a href="https://github.com/martinmatejovsky">GitHub</a>
 
       <figure className="motivation-image">
         <img src="/img/DL-III-ante-infocentrum.png" alt="Dobývání Lokte III" />
