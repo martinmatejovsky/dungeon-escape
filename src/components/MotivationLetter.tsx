@@ -11,14 +11,14 @@ export default function MotivationLetter() {
         Poslední léta jsem se živil jako vývojář webových stránek (čistě
         frontend), a nyní hledám nové pracovní vytížení. Moje hlavní dovednost
         spočívá ve Vue.js a s vývojem frontendu obecně. Nyní se učím React, ve
-        kterém je i napsána tato mini hra.
+        kterém je i napsána tato mini hra,
+        https://github.com/martinmatejovsky/dungeon-escape.
       </p>
       <p>
         Chtěl bych se rozvíjet hlavně ve frontendu, a postupně se dostávat i do
-        backnedu a tím pádem na full-stack vývojáře (Node JS by byl pro mě
-        nejpřirozenější, už v něm mám drobný osobní projekt). Tyto znalosti
-        promítám i do mého koníčku, kterým je tvorba příběhových her pro
-        kamarády.
+        backendu na full-stack vývojáře (Node JS by byl pro mě nejpřirozenější,
+        už v něm mám drobný osobní projekt). Tyto znalosti promítám i do mého
+        koníčku, kterým je tvorba příběhových her pro kamarády.
       </p>
 
       <figure className="motivation-image">
